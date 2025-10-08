@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benvingut a l'examen</title>
     <link rel="stylesheet" href="alba_munoz.css">
-    <script>
+    
+    <script src="config.js"></script>
+   
+
+</head>
+<body>
+     <script>
+      document.body.innerHTML += `<h1>Benvingut a l'examen de ${config.name}</h1>`;
+    </script>
+    <p>Aquest examen consta de dues parts. Selecciona una per començar.</p>
+    
+    <a href="part1.html">Part 1</a>
+    <a href="part2.html">Part 2</a>
+<div>
+    <button id="btn">Dibujar círculo</button>
+</div>
+    <div id="canvas"></div>
+  <script>
        const canvas = document.getElementById('canvas');
     const button = document.getElementById('btn');
 
@@ -26,22 +43,5 @@
       canvas.appendChild(circle);
     });
     </script>
-    <script src="config.js"></script>
-   
-
-</head>
-<body>
-     <script>
-      document.body.innerHTML += `<h1>Benvingut a l'examen de ${config.name}</h1>`;
-    </script>
-    <p>Aquest examen consta de dues parts. Selecciona una per començar.</p>
-    
-    <a href="part1.html">Part 1</a>
-    <a href="part2.html">Part 2</a>
-<div>
-    <button id="btn">Dibujar círculo</button>
-</div>
-    <div id="canvas"></div>
-
 </body>
 </html>
